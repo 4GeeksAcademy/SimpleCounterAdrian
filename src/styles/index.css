@@ -1,12 +1,54 @@
+.titular{
+   text-align: center;
+   background:linear-gradient(yellow,red);
+   height: 50px;
+}
+.animacion {
+   
+    animation: letrasbailarinas 3s infinite;
+  }
+  
+ 
+  @keyframes letrasbailarinas {
+  
+  
+  0% {
+   scale: 1;
+   
+  }
+  50% {
+   scale: 0;
+   
+  }
+  100% {
+    scale: 1;
+    color: rgb(82, 57, 210);
+  }
+  }
 
-/* 
+.fondo {
+    width: 100%;
+    height: 150px;
+    background-color: black;
+    color: yellow;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.cajaDelNumero {
+    margin: 20px;
+    width: 80px;
+    height: 100px;
 
-*/
+    border: 1px solid white;
+    align-content: center;
+
+}
+
+.numero {
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+}
