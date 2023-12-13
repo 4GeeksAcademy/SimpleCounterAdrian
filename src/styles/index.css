@@ -1,7 +1,9 @@
 .titular{
    text-align: center;
-   background:linear-gradient(yellow,red);
+   background:linear-gradient(grey
+   ,rgb(0, 242, 255));
    height: 50px;
+   color: white;
 }
 .animacion {
    
@@ -22,7 +24,7 @@
   }
   100% {
     scale: 1;
-    color: rgb(82, 57, 210);
+  
   }
   }
 
@@ -41,7 +43,7 @@
     width: 80px;
     height: 100px;
 
-    border: 1px solid white;
+    border: 1px solid rgb(0, 174, 255);
     align-content: center;
 
 }
@@ -51,4 +53,17 @@
     display: flex;
     justify-content: center;
     font-size: 60px;
+}
+.contenedordebotones{
+  padding: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+.btn{
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  &:hover{
+    scale: 1.5;
+  }
 }
