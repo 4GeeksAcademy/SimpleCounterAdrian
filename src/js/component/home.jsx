@@ -1,5 +1,8 @@
 import React from "react";
-import Simplecounter from "./simplecounter";
+import SimplecounterSegundos from "./simplecounterSegundos";
+import SimplecounterMinutos from "./simpleCounterMinutos";
+import SimplecounterHoras from "./simplecounterHoras";
+
 import RelojIcon from "./reloj";
 import Portada from "./titular";
 import Botones from "./botones";
@@ -10,18 +13,15 @@ import Botones from "./botones";
 const Home = () => {
   return (
     <div className="bg-black">
-      <Portada />
+      <Portada ></Portada>
       <div className="fondo">
-        <RelojIcon />
-        <Simplecounter />
-        <Simplecounter />
-        <Simplecounter />
-        <Simplecounter />
-        <Simplecounter />
-        <Simplecounter/>
+        <RelojIcon></RelojIcon>
+        <SimplecounterHoras></SimplecounterHoras>
+        <SimplecounterMinutos></SimplecounterMinutos>
+        <SimplecounterSegundos></SimplecounterSegundos>
       </div>
       <div >
-        <Botones/>
+        <Botones></Botones>
       </div>
     </div>
   );

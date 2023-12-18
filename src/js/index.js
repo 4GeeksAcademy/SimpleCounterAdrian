@@ -12,7 +12,24 @@ import Home from "./component/home.jsx";
 ReactDOM.render(<Home />, document.querySelector("#app"));
 
 window.onload = function () {
-  // Esperar a que la página esté completamente cargada
+  let segundos = 0;
+  let minutos = 0;
+  
+  setInterval(() => {
+      if (segundos <= 60) {
+          setTimeout(() => {
+              document.querySelector("#segundos").innerHTML = `${segundos}`;
+              console.log(segundos);
+              segundos++;
+          }, 1000);
+      } else {
+          minutos++;
+          segundos = 0;
+          document.querySelector("#segundos").innerHTML = `${minutos}`;
+          console.log(minutos);
+      }
+  }, 1000);
+
 
 };
 
