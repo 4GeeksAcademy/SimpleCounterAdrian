@@ -5,6 +5,9 @@
    height: 50px;
    color: white;
 }
+.container{
+  display: flex;
+}
 .animacion {
    
     animation: letrasbailarinas 3s infinite;
