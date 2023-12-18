@@ -5,9 +5,8 @@
    height: 50px;
    color: white;
 }
-.container{
-  display: flex;
-}
+
+
 .animacion {
    
     animation: letrasbailarinas 3s infinite;
@@ -40,7 +39,10 @@
     flex-direction: row;
     justify-content: center;
 }
-
+.container{
+  display: flex;
+  justify-content: space-around;
+}
 .cajaDelNumero {
     margin: 20px;
     width: 80px;
